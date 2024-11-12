@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jogo.css">
+    <script src="jogo.js"></script>
+    <!--<script src="opcoesJogo.html"></script>-->
+    <title>Jogo da Velha</title>
+    
+    <!--os links abaixo adicionam a fonte Doto do google fonts para ser usada no css-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Heebo:wght@700&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!--PASSAR VARIÁVEL COR PARA O ARQUIVO ATUAL-
+    <script>
+        let cor = location.hash.split('#')[1];
+        console.log(cor);
+        </script>-->
+    <main>
+        <h1 id="h1Jogo">JOGO DA VELHA</h1>
+        <!-- div para o bloco do jogo, cada espaço é um botão-->
+        <div class="divisaoJogo">
+            <button data-i="1"></button>
+            <button data-i="2"></button>
+            <button data-i="3"></button>
+            <button data-i="4"></button>
+            <button data-i="5"></button>
+            <button data-i="6"></button>
+            <button data-i="7"></button>
+            <button data-i="8"></button>
+            <button data-i="9"></button>
+        </div>
+        <h2 class="jogador"></h2>
+    </main>
+
+</body>
+</html>

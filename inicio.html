@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="inicio.css">
+
+    <!--os links abaixo adicionam a fonte Oxygen do google fonts para ser usada no css-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@700&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!--os links abaixo adicionam a fonte Doto do google fonts para ser usada no css-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Heebo:wght@700&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <title>Jogo da Velha</title>
+</head>
+<body>
+    <h1>JOGO DA VELHA</h1>
+    <p id="paragrafo" onclick="esconder()">O objetivo é fazer uma sequência de três símbolos iguais, que pode ser feita em linha horizontal, vertical ou diagonal</p>
+    <button id="irParaJogo" onclick="esconder()">INICIAR</button>
+
+    <!--este arquivo "index.html" é a página inicial, onde contém o nome do jogo e as regras-->
+
+    <!--o script abaixo serve para redirecionar o usuário para outra janela/arquivo html(jogo.html) que 
+    contém o jogo (onde acontecerá o jogo), 
+    caso o usuário tenha clicado no botão "COMEÇAR"-->
+    
+    <!--CÓDIGO EM JAVASCRIPT-->
+    <script>
+        // seleciona o botão e atribui a uma constante chamada botao
+        const botao = document.getElementById('irParaJogo');
+
+        // Insere o evento de clique, caso o usuário clique no botão, ele será redirecionado para o arquivo "jogo.html"
+        botao.addEventListener('click', function() {
+            // Redireciona para o arquivo "jogo.html" (arquivo com o conteúdo do jogo)
+            window.location.href = 'opcoesJogo.html';
+        });
+    </script>
+
+</body>
+</html>

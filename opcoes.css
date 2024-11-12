@@ -1,0 +1,107 @@
+/*Este arquivo "jogo.css" possui os estilos para o arquivo "jogo.html"*/
+
+/*configurações do h1 (título)*/
+h1{
+    font-size: 45px;
+    font-family: Doto;
+    font-weight: light;
+    letter-spacing: 3px;
+    padding-top: 70px;
+}
+
+/*configura o h1 do arquivo "opcoesJogo.html"*/
+#h1Opcao{
+    padding-bottom: 20px;
+    padding-left: 400px;
+}
+
+/*configura o h1 do arquivo "jogo.html*/
+#h1Jogo{
+    padding-left: 450px;
+}
+
+/* configurações do h2*/
+h2{
+    font-family: Oxygen;
+    font-weight: light;
+    font-size: 16px;
+    text-align: center;
+}
+
+/*configura o h2 do arquivo "opcoesJogo.html"*/
+#h2Opcao{
+    padding-top: 10px;
+}
+
+/*configurações da div dos botões*/
+.container{
+    width: 900px;
+    height: 100px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#botaoRoxo{
+    width: 115px;
+    height: 70px;
+    margin-right: 20px;
+}
+
+#botaoAmarelo{
+    width: 115px;
+    height: 70px;
+    margin-right: 20px;
+}
+
+#botaoAzul{
+    width: 115px;
+    height: 70px;
+}
+/*configurações para o botão "roxo"*/
+#roxo{
+    height: 50px;
+    width: 110px;
+    justify-content: center;
+    border-radius: 5px;
+    border: none;
+    margin:auto;
+    
+    color: rgb(255, 255, 255); 
+    background-color: rgb(74, 16, 125);
+    font-family: Oxygen; 
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+/*configurações para o botão amarelo*/
+#amarelo{
+    height: 50px;
+    width: 110px;
+    justify-content: center;
+    border-radius: 5px;
+    border: none;
+
+   
+    color: white; 
+    background-color: rgb(249, 255, 77); 
+    font-family: Oxygen; 
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/*configurações para o botão azul*/
+#azul{
+    height: 50px;
+    width: 110px;
+    justify-content: center;
+    border-radius: 5px;
+    border: none;
+   
+    color: white; 
+    background-color: rgb(59, 180, 255); 
+    font-family: Oxygen; 
+    font-weight: bold;
+    letter-spacing: 1px;
+}

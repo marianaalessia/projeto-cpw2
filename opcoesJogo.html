@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="opcoes.css">
+    <script src="index.js"></script>
+    <title>Configurações</title>
+
+    <!--os links abaixo adicionam a fonte Doto do google fonts para ser usada no css-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Heebo:wght@700&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!--Este arquivo "opcoesJogo.html" é a página onde o usuário pode escolher o plano de fundo do jogo-->
+    <h1 id="h1Opcao">CONFIGURAÇÃO DO JOGO</h1>
+
+    <!--Permite que o usuário escolha a cor do plano de fundo usando o DOM-->
+    <h2 id="h2Opcao">Escolha a cor do plano de fundo do jogo</h2>
+
+    <!-- div para poder centralizar os botões -->
+    <div class="container">
+        <div id="botaoRoxo">
+            <button id="roxo" onclick="escolheCor()">ROXO</button>
+        </div>
+        <div id="botaoAmarelo">
+            <button id="amarelo" onclick="escolheCor()">AMARELO</button>
+        </div>
+        <div id="botaoAzul">
+            <button id="azul" onclick="escolheCor()">AZUL</button>
+        </div>
+    </div>
+
+    <!--CÓDIGO EM JAVASCRIPT-->
+    <script>
+        function escolheCor(){
+            // define a variável da cor que será utilizada no plano de fundo do jogo
+            let cor = [];
+
+            // define as constantes para verificar qual cor foi escolhida 
+            const roxo = document.getElementById("roxo");
+            const amarelo = document.getElementById("amarelo");
+            const azul = document.getElementById("azul");
+
+            /* adiciona os eventos para verificar qual botão foi clicado, caso tenha sido clicado, redireciona
+            o usuário para o arquivo "jogo.html", onde o jogo inicia"*/
+
+            roxo.addEventListener('click', function(){
+                // armazena a cor escolhida na variável "cor", cor = roxo
+                cor = "roxo";
+                location.assign('jogo.html#' + cor);
+                // redireciona o usuário para o arquivo "jogo.html"
+                window.location.href = 'jogo.html';
+            });
+
+            amarelo.addEventListener('click', function(){
+                // armazena a cor escolhida na variável "cor", cor = amarelo
+                cor = "amarelo";
+                location.assign('jogo.html#' + cor);
+                // redireciona o usuário para o arquivo "jogo.html"
+                window.location.href = 'jogo.html';
+            });
+
+            azul.addEventListener('click', function(){
+                // armazena a cor escolhida na variável "cor", cor = azul
+                cor = "azul";
+                location.assign('jogo.html#' + cor);
+                // redireciona o usuário para o arquivo "jogo.html"
+                window.location.href = 'jogo.html';
+            });
+
+        }
+
+    </script>
+    
+</body>
+</html>

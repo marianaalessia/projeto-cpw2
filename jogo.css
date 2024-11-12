@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*background-color: blue;*/
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+h1{
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: Doto;
+    font-size: 45px;
+    letter-spacing: 1px;
+    color: rgb(74, 16, 125);
+}
+
+.divisaoJogo{
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.divisaoJogo button{
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 50px;
+    background: white;
+    border-color: rgba(74, 16, 125, 0.445);
+}
+
